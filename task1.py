@@ -3,3 +3,12 @@
 # Пример ввода
 # яблоки сливы груши персики манго киви апельсины
 # 34 56 23 89 55 32 11
+
+a = input()
+b = input()
+
+alist=a.split(' ')
+blist=b.split(' ')
+buk={k: v for k, v in zip(alist,blist)}
+
+print(buk)
