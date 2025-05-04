@@ -9,12 +9,12 @@
 
 a = input()
 a = a.lower()
-alist=list(a)
-buk = {}
+count = {}
 
+for i in a:
+    if i in count:
+        count[i] += 1
+    else:
+        count[i] = 1
 
-buk={alist}
-
-
-
-print(buk)
+print(count)
