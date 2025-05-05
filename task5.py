@@ -6,11 +6,14 @@
 # Используйте словари для словаря:)
 
 slovar = {'i':'я', 'love':'люблю', 'you':'ты', 'Kasane Teto':'Касане Тето'}
+b = True
 
 print(slovar)
-while True:
+while b == True:
     a = input('введите слово: ')
     if a in slovar:
         print(slovar[a])
+    elif a == 'exit':
+        b = False
     else:
         print('нет такого слова')
