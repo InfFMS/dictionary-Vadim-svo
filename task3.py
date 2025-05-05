@@ -6,3 +6,15 @@
 # Абракадабра
 # Вывод
 # а-5 б-2 д-1 к-1 р-2
+
+a = input()
+a = a.lower()
+count = {}
+
+for i in a:
+    if i in count:
+        count[i] += 1
+    else:
+        count[i] = 1
+
+print(count)
